@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\1002max.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\1002max.dir/objects.a @CMakeFiles\1002max.dir\objects1.rsp
+C:\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\1002max.dir/objects.a -Wl,--no-whole-archive -o 1002max.exe -Wl,--out-implib,lib1002max.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\1002max.dir\linklibs.rsp

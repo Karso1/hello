@@ -1,15 +1,22 @@
 #include<stdio.h>
-int changee(int x)
-{
-    int y;
-    y = 5*(x-32)/9;
-    return y;
-}
+double jie(int n);
 int main()
 {
-    int x;
-    scanf("%d",&x);
-    x=changee(x);
-    printf("%d",x);
+    int i,n;
+    double e =1;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        e += 1/jie(i);
+    }
+    printf("%.8lf",e);
     return 0;
+}
+double jie(int n)
+{
+    int i;
+    double s = 1;
+    for(i = 1;i<=n;i++)
+        s *= i;
+    return s;
 }
